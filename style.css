@@ -1,0 +1,183 @@
+.container{
+    display: grid;
+    grid-template-areas: 
+    "headder headder headder"
+    "sidebar main main" 
+    "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 200px 1fr 1fr ;
+    font-family:Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+.headder{
+    grid-area: headder;
+    background-color: rgb(9, 9, 9);
+    color: white;
+    display: flex;
+    justify-content: center ;
+    font-size: 36px;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: #f4f4f4;
+    padding: 20px;
+
+}
+.sidebar ul{
+     list-style: none;
+    padding: 0;
+
+}
+.sidebar li{
+      padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.sidebar li:hover {
+    background-color: black;
+    color:white;}
+.sidebar a{
+    text-decoration: none;
+}
+.content{
+    grid-area: main;
+    display: flex;
+
+}
+.about-container {
+    grid-area: main;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .about-container h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+  }
+
+  .about-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  /* Grid layout for about page */
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .about-item {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .about-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .about-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .about-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .about-item p {
+    font-size: 14px;
+    color: #555;
+  }
+.footer{
+ grid-area: footer;
+ background-color: black;
+ color: white;
+ text-align: center;
+}
+.footer :hover{
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+.content {
+    grid-area: main;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    background: #fff;
+}
+/* Product Cards */
+.product {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background: #fafafa;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 300px;
+
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+/*login page & Sign up page*/
+.log-in-box{
+  grid-area: main;
+  background: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+   
+}
+.Details{
+  grid-area: main;
+  display: grid;
+  gap: 5px;
+}
+.button{ 
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.button :hover{
+  background-color:rgb(13, 166, 237)
+}
